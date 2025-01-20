@@ -4,8 +4,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Work Sans", serif;
-}    
+    font-family: "Quicksand";
+}
+main{
+    padding: 50px 10%;
+}  
 
 /* Header related Styles */
 header{
@@ -18,16 +21,175 @@ header{
     font-size: 2.5rem;
 }
 .child-head{
-    background-color: #FFFFFF; 
-    width: 100%;
-    padding: 20px 140px;
-
+    padding: 20px 10%;
 }
+
+.button-primary{
+    background-color: #FEA301;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 12px;
+    color: white;
+}
+.nav-items{
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.nav-li-item1, .nav-li-item2, .nav-li-item3, .nav-li-item4{
+    text-decoration: none;   
+}
+.nav-li-item1{
+    color: #FEA301;
+}
+.nav-li-item2{
+    color: #01ACFD;
+}
+.nav-li-item3{
+    color: #05D4DF;
+}
+.nav-li-item4{
+    color: #5D58EF;
+}
+.header-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-transform:uppercase;
+}
+/* Banner related styles */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    gap: 40px;
+}
+.banner-items h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.banner-items p{
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+.banner-items .banner-button{
+    background-color: black;
+    color: white;
+    padding: 10px 47px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+}
+.empowering{
+    color: #FEA301;
+}
+.vision{
+    color: #01ACFD;
+}
+
+/* Curriculum related styles */
+
+.curriculum-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.section-curriculum{
+    text-align: center;
+}
+.curriculum-title{
+    font-size: 3.2rem;
+    margin-bottom: 80px;
+}
+.curriculum-card{
+    padding: 30px;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+    background-color: white;
+}
+.curriculum-card img{
+    width: 50%;
+}
+.card-1{
+    background-image: linear-gradient(to bottom, rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
+    border: 1px solid rgba(222, 245, 255, 1);
+}
+.card-2{
+    background-image: linear-gradient(to bottom, rgba(255, 244, 220, 1), rgba(255, 255, 255, 1));
+    border: 1px solid rgba(255, 244, 220, 1);
+}
+.card-3{
+    background-image: linear-gradient(to bottom, rgba(238, 225, 255, 1), rgba(255, 255, 255, 1));
+    border: 1px solid rgba(242, 232, 255, 1);
+}
+.curriculum-card a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.card-1 a{
+    color: skyblue;
+}
+.card-2 a{
+    color: #FEA301;
+}
+.card-3 a{
+    color: #8700FF;
+}
+.curriculum-card p{
+    color: #808080;
+    line-height: 28.3px;
+}
+.curriculum-button{
+    background-color: #FEA301;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0px 10px;
+}
+
+
+
 @media screen and (max-width:576px) {
     nav, .button-container{
         display: none;
     }
-    
+    header{
+        border-bottom: 2px solid #FEA301;
+    }
+    .logo span {
+        display: none;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+    }   
+    .banner-items{
+        text-align: center;
+
+    }
     
 }
 @media screen and (min-width:993px) {
