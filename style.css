@@ -74,6 +74,7 @@ header{
     justify-content: space-between;
     align-items: center;    
     gap: 40px;
+    margin-bottom: 50px;
 }
 .banner-items h1{
     font-size: 3rem;
@@ -188,7 +189,9 @@ header{
     }   
     .banner-items{
         text-align: center;
-
+    }
+    .curriculum-card-container{
+        flex-direction: column;
     }
     
 }
