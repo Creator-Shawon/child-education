@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: "Quicksand";
 }
-main{
+section{
     padding: 50px 10%;
 }  
 
@@ -172,7 +172,61 @@ header{
     margin: 0px 10px;
 }
 
+/* Stories related styles */
 
+.section-stories {
+    background-image: url("assets/bg.png"), linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0));
+    width: 100%;
+}
+
+.stories-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.small-cart-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.section-stories img{
+    width: 100%;
+}
+
+.stories-big-cart, .stories-small-cart{
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: white;
+
+}
+.big-cart-title, .cart-description{
+    padding: 30px;
+    position: relative;
+
+}
+.big-cart-title button, .cart-description button{
+    position: relative;
+    top: -55px;
+    background-color: #FEA301;
+    padding: 10px 20px;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-size: .8rem;
+    font-weight: 400;
+
+}
+.stories-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.stories-title h1{
+    font-size: 2.8rem;
+}
+
+.small-cart-container .stories-small-cart:nth-child(n+5){
+    display: none;
+}
 
 @media screen and (max-width:576px) {
     nav, .button-container{
