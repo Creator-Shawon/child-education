@@ -105,6 +105,67 @@ header{
     color: #01ACFD;
 }
 
+
+/* News Bar */
+
+#news {
+    padding: 0 7%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    z-index: 2;
+}
+
+.news-container {
+    background-color: #fbfbfc37;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid darkgray;
+}
+
+.news-title {
+    background-color: #FEA301;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    top: -7px;
+    font-weight: 800;
+}
+
+.news-items {
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px 0px;
+}
+
+.objects {
+    display: inline-block;
+    animation: news 20s linear -1s infinite;
+}
+
+.objects span {
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    position: relative;
+    top: 7px;
+    z-index: 1;
+}
+
+@keyframes news {
+    0% {
+        transform: translateX(70%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 /* Curriculum related styles */
 
 .curriculum-card-container{
