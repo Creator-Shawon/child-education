@@ -69,6 +69,10 @@ header{
     text-transform:uppercase;
 }
 /* Banner related styles */
+
+.banner-image img {
+    width: 100%;
+}
 .banner-container{
     display: flex;
     justify-content: space-between;
@@ -368,6 +372,18 @@ header{
         display: flex;
         flex-direction: column;       
     }
+
+    .footer-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .curriculum-buttons {
+        display: none;
+    }
+
+    .stories-big-cart {
+        display: none;
+    }
    
 
     
@@ -377,4 +393,8 @@ header{
         display: none;
     }
     
+}
+
+.hide {
+    display: none;
 }
