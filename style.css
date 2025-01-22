@@ -245,6 +245,9 @@ header{
 }
 .section-curriculum{
     background-image: url("assets/bg.png");
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -256,7 +259,7 @@ header{
     background-image: url("assets/bg.png"), linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0));
     width: 100%;
     margin-top: 0px;
-    background-position: right bottom;
+    background-position: top left;
     background-size: contain;
     background-repeat: none;
     text-align: center;
